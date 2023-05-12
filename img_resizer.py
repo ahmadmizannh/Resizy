@@ -9,7 +9,8 @@ def resize_image(image, size):
 
 # Main function
 def main():
-    st.title("Image Resizer")
+    st.title("ReSizy")
+    st.subheader("Just a Simple Image Resizer")
 
     # Upload image file
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
