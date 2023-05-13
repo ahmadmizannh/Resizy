@@ -23,13 +23,13 @@ def main():
         st.image(image, caption="Original Image")
 
         # Choose the resize option
-        resize_option = st.selectbox("Choose Resize Option", ("Large", "Medium", "Small", "Custom"))
+        resize_option = st.selectbox("Choose Resize Option", ("Large (2400x1600)", "Medium (1200x800)", "Small (640x480)", "Custom"))
 
-        if resize_option == "Large (2400x1600)":
+        if resize_option == "Large":
             size = (2400, 1600)
-        elif resize_option == "Medium (1200x800)":
+        elif resize_option == "Medium":
             size = (1200, 800)
-        elif resize_option == "Small (640x480)":
+        elif resize_option == "Small":
             size = (640, 480)
         else:
             custom_width = st.number_input("Enter custom width", min_value=1)
