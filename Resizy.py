@@ -9,7 +9,7 @@ def resize_image(image, size):
 
 # Main function
 def main():
-    st.title("Resizy : Just a Simple Image Resizer")
+    st.title("Resizee : Just a Simple Image Resizer")
 
     # Upload image file
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
@@ -25,12 +25,12 @@ def main():
         # Choose the resize option
         resize_option = st.selectbox("Choose Resize Option", ("Large", "Medium", "Small", "Custom"))
 
-        if resize_option == "Large":
-            size = (1920, 2560)
-        elif resize_option == "Medium":
-            size = (1280, 1707)
-        elif resize_option == "Small":
-            size = (640, 853)
+        if resize_option == "Large (2400x1600)":
+            size = (2400, 1600)
+        elif resize_option == "Medium (1200x800)":
+            size = (1200, 800)
+        elif resize_option == "Small (640x480)":
+            size = (640, 480)
         else:
             custom_width = st.number_input("Enter custom width", min_value=1)
             custom_height = st.number_input("Enter custom height", min_value=1)
