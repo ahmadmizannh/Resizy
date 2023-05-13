@@ -23,7 +23,7 @@ def main():
         st.image(image, caption="Original Image")
 
         #Size information
-        st.tittle("Size Information")
+        st.title("Size Information")
         st.subheader("Large (2400x1600)"+", "+"Medium (1200x800)"+", "+"Small (640x480)"+", "+"Custom (Input as you like)")
         # Choose the resize option
         resize_option = st.selectbox("Choose Resize Option", ("Large", "Medium", "Small", "Custom"))
